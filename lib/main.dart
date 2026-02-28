@@ -12,11 +12,11 @@ class CarRentalDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
         fontFamily: kFontFamily
       ),
-      
       home: const DashboardHomeView(),
     );
   }

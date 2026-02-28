@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_single_quotes
-class Assets{
+class Assets {
   Assets._();
   
   /// Assets for imagesAvatarTest1
@@ -21,6 +21,42 @@ class Assets{
   /// Assets for imagesGreenStatus
   /// assets/images/green_status.svg
   static const String imagesGreenStatus = "assets/images/green_status.svg";
+
+  /// Assets for imagesIconsBell
+  /// assets/images/icons/Bell.svg
+  static const String imagesIconsBell = "assets/images/icons/Bell.svg";
+
+  /// Assets for imagesIconsBooking
+  /// assets/images/icons/Booking.svg
+  static const String imagesIconsBooking = "assets/images/icons/Booking.svg";
+
+  /// Assets for imagesIconsCar
+  /// assets/images/icons/Car.svg
+  static const String imagesIconsCar = "assets/images/icons/Car.svg";
+
+  /// Assets for imagesIconsDashboard
+  /// assets/images/icons/Dashboard.svg
+  static const String imagesIconsDashboard = "assets/images/icons/Dashboard.svg";
+
+  /// Assets for imagesIconsLogout
+  /// assets/images/icons/Logout.svg
+  static const String imagesIconsLogout = "assets/images/icons/Logout.svg";
+
+  /// Assets for imagesIconsPayment
+  /// assets/images/icons/Payment.svg
+  static const String imagesIconsPayment = "assets/images/icons/Payment.svg";
+
+  /// Assets for imagesIconsReport
+  /// assets/images/icons/Report.svg
+  static const String imagesIconsReport = "assets/images/icons/Report.svg";
+
+  /// Assets for imagesIconsSettings
+  /// assets/images/icons/Settings.svg
+  static const String imagesIconsSettings = "assets/images/icons/Settings.svg";
+
+  /// Assets for imagesIconsTransaction
+  /// assets/images/icons/Transaction.svg
+  static const String imagesIconsTransaction = "assets/images/icons/Transaction.svg";
 
   /// Assets for imagesLogo
   /// assets/images/logo.svg

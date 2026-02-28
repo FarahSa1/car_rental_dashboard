@@ -1,3 +1,4 @@
+import 'package:car_rental_dashboard/features/home/presentation/views/widgets/cusotm_drawer_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewDesktopLayout extends StatelessWidget {
@@ -5,6 +6,6 @@ class HomeViewDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const CusotmDrawerSection();
   }
 }
