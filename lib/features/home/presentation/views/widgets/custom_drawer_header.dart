@@ -8,12 +8,17 @@ class CustomDrawerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset(Assets.imagesLogo),
-        const SizedBox(width: 4,),
-        Text('CAR RENT', style: AppStyles.styleBold26(context).copyWith(color: Color(0xffFFFFFF)),)
+        Flexible(child: SvgPicture.asset(Assets.imagesLogo)),
+        const SizedBox(width: 4),
+        Text(
+          'CAR RENT',
+          style: AppStyles.styleBold26(
+            context,
+          ).copyWith(color: Color(0xffFFFFFF)),
+        ),
       ],
     );
   }

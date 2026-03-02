@@ -10,7 +10,6 @@ class CusotmDrawerSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
       padding: const EdgeInsets.symmetric(vertical: 48.0, horizontal: 32.0),
       decoration: BoxDecoration(color: AppColors.black),
       child: CustomScrollView(

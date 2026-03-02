@@ -2,7 +2,7 @@
 
 import 'package:car_rental_dashboard/core/utils/app_images.dart';
 import 'package:car_rental_dashboard/core/utils/app_styles.dart';
-import 'package:car_rental_dashboard/features/home/data/drawer_item_model.dart';
+import 'package:car_rental_dashboard/features/home/data/models/drawer_item_model.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/drawer_item.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +46,7 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
             ],
           );
         } else {
-          return SizedBox.shrink();
+          return const SizedBox.shrink();
         }
       },
       itemCount: items.length,
@@ -73,7 +73,7 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
 
 
 
-//method 2 using SliverList and SliverChildBuilderDelegate
+//method 2 using SliverList and SliverChildBuilderDelegate - better method
 /*
 import 'package:car_rental_dashboard/core/utils/app_images.dart';
 import 'package:car_rental_dashboard/core/utils/app_styles.dart';
@@ -89,7 +89,9 @@ class DrawerItemsListView extends StatefulWidget {
 }
 
 class _DrawerItemsListViewState extends State<DrawerItemsListView> {
-  final List<DrawerItemModel> items = [
+  static const int reportSectionIndex = 5;
+
+  final List<DrawerItemModel> items =  [
     DrawerItemModel(title: 'Dashboard', icon: Assets.imagesIconsDashboard),
     DrawerItemModel(title: 'Drivers', icon: Assets.imagesIconsCar),
     DrawerItemModel(title: 'Bookings', icon: Assets.imagesIconsBooking),
@@ -107,13 +109,14 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
-          if (index == 4) {
+
+          if (index == reportSectionIndex) {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Divider(height: 32, thickness: 0.3),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
                   child: Text(
                     'Report',
                     style: AppStyles.styleRegular16(context)
@@ -127,22 +130,25 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
             );
           }
 
+          final itemIndex =
+              index > reportSectionIndex ? index - 1 : index;
+
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: GestureDetector(
               onTap: () {
                 setState(() {
-                  currentIndex = index;
+                  currentIndex = itemIndex;
                 });
               },
               child: DrawerItem(
-                drawerItemModel: items[index],
-                isActive: currentIndex == index,
+                drawerItemModel: items[itemIndex],
+                isActive: currentIndex == itemIndex,
               ),
             ),
           );
         },
-        childCount: items.length,
+        childCount: items.length + 1,
       ),
     );
   }

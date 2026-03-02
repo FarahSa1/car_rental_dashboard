@@ -1,4 +1,4 @@
-import 'package:car_rental_dashboard/features/home/data/drawer_item_model.dart';
+import 'package:car_rental_dashboard/features/home/data/models/drawer_item_model.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/active_and_inactive_drawer_item.dart';
 import 'package:flutter/material.dart';
 

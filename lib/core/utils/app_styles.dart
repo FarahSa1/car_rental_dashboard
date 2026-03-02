@@ -6,6 +6,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w300,
+       fontFamily: 'Inter'
     );
   }
 
@@ -13,6 +14,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w300,
+       fontFamily: 'Inter'
     );
   }
 
@@ -20,6 +22,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
       fontWeight: FontWeight.w400,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -27,6 +31,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w400,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -34,6 +40,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w400,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -41,6 +49,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
       fontWeight: FontWeight.w400,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -48,6 +58,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 32),
       fontWeight: FontWeight.w400,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -55,6 +67,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w500,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -62,6 +76,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w500,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -69,6 +85,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
       fontWeight: FontWeight.w500,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -76,6 +94,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       fontWeight: FontWeight.w500,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -83,6 +103,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontWeight: FontWeight.w600,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -90,6 +112,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 32),
       fontWeight: FontWeight.w600,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -97,6 +121,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w700,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -104,6 +130,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 26),
       fontWeight: FontWeight.w700,
+             fontFamily: 'Inter'
+
     );
   }
 
@@ -111,6 +139,8 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 28),
       fontWeight: FontWeight.w700,
+             fontFamily: 'Inter'
+
     );
   }
 }

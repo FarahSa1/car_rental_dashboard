@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.2.2  
   font_awesome_flutter: ^10.9.1
+  fl_chart: ^0.68.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -78,9 +79,7 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-        - asset: assets/fonts/Inter_18pt-Regular.ttf
-        - asset: assets/fonts/Inter_24pt-Regular.ttf
-        - asset: assets/fonts/Inter_28pt-Regular.ttf
+        - asset: assets/fonts/Inter-Regular.ttf
 
   #   - family: Trajan Pro
   #     fonts:

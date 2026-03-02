@@ -22,6 +22,14 @@ class Assets {
   /// assets/images/green_status.svg
   static const String imagesGreenStatus = "assets/images/green_status.svg";
 
+  /// Assets for imagesIconsArrowDown
+  /// assets/images/icons/arrow_down.svg
+  static const String imagesIconsArrowDown = "assets/images/icons/arrow_down.svg";
+
+  /// Assets for imagesIconsArrowUp
+  /// assets/images/icons/arrow_up.svg
+  static const String imagesIconsArrowUp = "assets/images/icons/arrow_up.svg";
+
   /// Assets for imagesIconsBell
   /// assets/images/icons/Bell.svg
   static const String imagesIconsBell = "assets/images/icons/Bell.svg";
