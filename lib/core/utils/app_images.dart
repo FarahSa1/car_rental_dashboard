@@ -50,6 +50,10 @@ class Assets {
   /// assets/images/icons/Logout.svg
   static const String imagesIconsLogout = "assets/images/icons/Logout.svg";
 
+  /// Assets for imagesIconsNotification
+  /// assets/images/icons/notification.svg
+  static const String imagesIconsNotification = "assets/images/icons/notification.svg";
+
   /// Assets for imagesIconsPayment
   /// assets/images/icons/Payment.svg
   static const String imagesIconsPayment = "assets/images/icons/Payment.svg";
@@ -57,6 +61,10 @@ class Assets {
   /// Assets for imagesIconsReport
   /// assets/images/icons/Report.svg
   static const String imagesIconsReport = "assets/images/icons/Report.svg";
+
+  /// Assets for imagesIconsSearch
+  /// assets/images/icons/search.svg
+  static const String imagesIconsSearch = "assets/images/icons/search.svg";
 
   /// Assets for imagesIconsSettings
   /// assets/images/icons/Settings.svg

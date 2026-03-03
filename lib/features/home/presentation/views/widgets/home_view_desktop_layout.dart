@@ -1,5 +1,6 @@
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/cusotm_drawer_section.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/statistics_section.dart';
+import 'package:car_rental_dashboard/features/home/presentation/views/widgets/transport_command_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewDesktopLayout extends StatelessWidget {
@@ -18,7 +19,9 @@ class HomeViewDesktopLayout extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(flex: 3, child: StatisticsSection()),
-                    Expanded(flex: 7, child: SizedBox()),
+                    Expanded(flex: 7, child: TransportCommandSection()),
+                    // Expanded(flex: 7, child: SizedBox()),
+
                   ],
                 ),
               ),
