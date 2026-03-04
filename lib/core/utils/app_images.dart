@@ -38,9 +38,17 @@ class Assets {
   /// assets/images/icons/Booking.svg
   static const String imagesIconsBooking = "assets/images/icons/Booking.svg";
 
+  /// Assets for imagesIconsCalendarCheck
+  /// assets/images/icons/calendar-check.svg
+  static const String imagesIconsCalendarCheck = "assets/images/icons/calendar-check.svg";
+
   /// Assets for imagesIconsCar
   /// assets/images/icons/Car.svg
   static const String imagesIconsCar = "assets/images/icons/Car.svg";
+
+  /// Assets for imagesIconsClock2
+  /// assets/images/icons/Clock2.svg
+  static const String imagesIconsClock2 = "assets/images/icons/Clock2.svg";
 
   /// Assets for imagesIconsDashboard
   /// assets/images/icons/Dashboard.svg

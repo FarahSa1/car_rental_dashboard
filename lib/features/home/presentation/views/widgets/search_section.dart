@@ -12,7 +12,7 @@ class SearchSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Row(
       children: [
-        Expanded(child: SizedBox()),
+        Expanded(child: SizedBox()),   //or Spacer(),
         Expanded(
           child: SizedBox(
                 height: 48,
@@ -25,7 +25,6 @@ class SearchSection extends StatelessWidget {
                         horizontaladding: 24,
                         verticalPadding: 12,
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
                               child: TextField(
@@ -38,7 +37,7 @@ class SearchSection extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const Spacer(),
+                            // const Spacer(),
                              SvgPicture.asset(
                               Assets.imagesIconsSearch,
                             ),
