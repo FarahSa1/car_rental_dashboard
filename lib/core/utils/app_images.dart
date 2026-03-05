@@ -2,18 +2,6 @@
 class Assets {
   Assets._();
   
-  /// Assets for imagesAvatarTest1
-  /// assets/images/avatar_test1.svg
-  static const String imagesAvatarTest1 = "assets/images/avatar_test1.svg";
-
-  /// Assets for imagesAvatarTest2
-  /// assets/images/avatar_test2.svg
-  static const String imagesAvatarTest2 = "assets/images/avatar_test2.svg";
-
-  /// Assets for imagesAvatarTest3
-  /// assets/images/avatar_test3.svg
-  static const String imagesAvatarTest3 = "assets/images/avatar_test3.svg";
-
   /// Assets for imagesBlueStatus
   /// assets/images/blue_status.svg
   static const String imagesBlueStatus = "assets/images/blue_status.svg";
@@ -54,6 +42,10 @@ class Assets {
   /// assets/images/icons/Dashboard.svg
   static const String imagesIconsDashboard = "assets/images/icons/Dashboard.svg";
 
+  /// Assets for imagesIconsFilter
+  /// assets/images/icons/Filter.svg
+  static const String imagesIconsFilter = "assets/images/icons/Filter.svg";
+
   /// Assets for imagesIconsLogout
   /// assets/images/icons/Logout.svg
   static const String imagesIconsLogout = "assets/images/icons/Logout.svg";
@@ -89,5 +81,17 @@ class Assets {
   /// Assets for imagesRedStatus
   /// assets/images/red_status.svg
   static const String imagesRedStatus = "assets/images/red_status.svg";
+
+  /// Assets for imagesTestAvatar1
+  /// assets/images/test_avatar_1.png
+  static const String imagesTestAvatar1 = "assets/images/test_avatar_1.png";
+
+  /// Assets for imagesTestAvatar2
+  /// assets/images/test_avatar_2.png
+  static const String imagesTestAvatar2 = "assets/images/test_avatar_2.png";
+
+  /// Assets for imagesTestAvatar3
+  /// assets/images/test_avatar_3.png
+  static const String imagesTestAvatar3 = "assets/images/test_avatar_3.png";
 }
 
