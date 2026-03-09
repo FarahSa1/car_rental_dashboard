@@ -7,9 +7,9 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => const CarRentalDashboard(),
-  )
+    )
   );
 }
 
