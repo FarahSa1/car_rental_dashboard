@@ -22,8 +22,7 @@ class SearchSection extends StatelessWidget {
                     const SizedBox(width: 40),
                      Flexible(
                       child: CustomBackgroundContainer(
-                        horizontaladding: 24,
-                        verticalPadding: 12,
+                        bottomPadding: 12, topPadding: 12,
                         child: Row(
                           children: [
                             Expanded(
@@ -37,7 +36,6 @@ class SearchSection extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            // const Spacer(),
                              SvgPicture.asset(
                               Assets.imagesIconsSearch,
                             ),

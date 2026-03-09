@@ -11,9 +11,9 @@ class TransportCommandSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.symmetric(vertical: 32, horizontal: 28),
+      padding: EdgeInsets.only(left: 28, right: 28, top: 32),
       child: const Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SearchSection(),
           SizedBox(height: 20),

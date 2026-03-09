@@ -15,7 +15,8 @@ class HomeViewDesktopLayout extends StatelessWidget {
           flex: 10,
           child: CustomScrollView(
             slivers: [
-              SliverToBoxAdapter(
+              SliverFillRemaining(
+                hasScrollBody: false,
                 child: Row(
                   children: [
                     Expanded(flex: 3, child: StatisticsSection()),

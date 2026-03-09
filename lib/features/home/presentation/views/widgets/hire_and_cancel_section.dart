@@ -43,12 +43,13 @@ class _HireAndCancelSectionState extends State<HireAndCancelSection> {
           StatisticsHeader(title: 'Hire vs Cancel'),
           const SizedBox(height: 30),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 47.0, vertical: 24.0),
+            padding: const EdgeInsets.symmetric(horizontal: 47.0,),
             child: AspectRatio(
               aspectRatio: 1,
               child: PieChart(buildPieChartData(chartItems: chartItems)),
             ),
           ),
+          const SizedBox(height: 24),
           ChartDetails(chartItems: chartItems),
         ],
       ),
@@ -73,7 +74,7 @@ class _HireAndCancelSectionState extends State<HireAndCancelSection> {
           value: chartItems[index].value,
           color: chartItems[index].color,
           showTitle: false,
-          radius: activeIndex == index ? 40 : 30,
+          radius: activeIndex == index ? 30 : 20,
         );
       }),
     );

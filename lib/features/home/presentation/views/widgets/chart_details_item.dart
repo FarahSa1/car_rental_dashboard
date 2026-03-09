@@ -10,49 +10,66 @@ class ChartDetailsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 16, maxHeight: 16),
-        child: AspectRatio(
-          aspectRatio: 1,
-          child: Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: pieChartItemModel.color,
-            ),
-          ),
-        ),
-      ),
+      // dense: true,
+      contentPadding: EdgeInsets.zero,
+      visualDensity: VisualDensity(vertical: -4),
+      leading: buildLeading(),
       title: FittedBox(
         fit: BoxFit.scaleDown,
         alignment: Alignment.centerLeft,
-        child: Text(pieChartItemModel.title),
+        child: Text(
+          pieChartItemModel.title, 
+          style: AppStyles.styleRegular16(
+            context,
+          ).copyWith(color: AppColors.black,),),
       ),
-      titleTextStyle: AppStyles.styleRegular16(
-        context,
-      ).copyWith(color: AppColors.black),
-      trailing: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
+      trailing: buildTrailing(context),
+    );
+  }
+
+  ConstrainedBox buildLeading() {
+    return ConstrainedBox(
+      constraints: BoxConstraints(maxWidth: 16, maxHeight: 16),
+      child: AspectRatio(
+        aspectRatio: 1,
+        child: Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: pieChartItemModel.color,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Row buildTrailing(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
             '${pieChartItemModel.value}'
             r'$',
             style: AppStyles.styleRegular16(
               context,
-            ).copyWith(color: AppColors.black),
+            ).copyWith(color: AppColors.black, ),
+            
           ),
-          SizedBox(width: 4),
-          Icon(
-            pieChartItemModel.isDown
-                ? FontAwesomeIcons.arrowDown
-                : FontAwesomeIcons.arrowUp,
-            size: 14,
-            color:
-                pieChartItemModel.isDown
-                    ? AppColors.secondaryRed
-                    : AppColors.green,
-          ),
-        ],
-      ),
+        ),
+        SizedBox(width: 4),
+        Icon(
+          pieChartItemModel.isDown
+              ? FontAwesomeIcons.arrowDown
+              : FontAwesomeIcons.arrowUp,
+          size: 14,
+          color:
+              pieChartItemModel.isDown
+                  ? AppColors.secondaryRed
+                  : AppColors.green,
+        ),
+      ],
     );
   }
 }

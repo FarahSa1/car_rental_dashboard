@@ -9,8 +9,8 @@ class EarningSummarySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
-      verticalPadding: 32,
-      horizontaladding: 28,
+      leftPadding: 28, rightPadding: 28,
+      topPadding: 32, bottomPadding: 32,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

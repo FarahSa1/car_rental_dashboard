@@ -7,15 +7,11 @@ class CommandHeaderTitle extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
-      fit: BoxFit.scaleDown,
-      alignment: Alignment.centerLeft,
-      child: Text(
-        title,
-        style: AppStyles.styleSemiBold16(
-          context,
-        ).copyWith(color: AppColors.black),
-      ),
+    return Text(
+      title,
+      style: AppStyles.styleSemiBold16(
+        context,
+      ).copyWith(color: AppColors.black),
     );
   }
 }

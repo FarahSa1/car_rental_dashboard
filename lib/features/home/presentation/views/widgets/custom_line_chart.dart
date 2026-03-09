@@ -125,7 +125,7 @@ class CustomLineChart extends StatelessWidget {
         sideTitles: SideTitles(
           interval: 1,
           showTitles: true,
-          // reservedSize: 35,
+          reservedSize: 35,
           getTitlesWidget: (value, meta) {
             const months = ["May", "Jun", "Jul", "Aug", "Sep", "Oct"];
             if (value < 0 || value > 5) {
@@ -146,12 +146,18 @@ class CustomLineChart extends StatelessWidget {
           reservedSize: 40,
           getTitlesWidget: (value, meta) {
             if (value == 0) {
-              return Text(r'$0.00', style: titleTextStyle);
+              return FittedBox(
+              fit: BoxFit.scaleDown,
+                
+                child: Text(r'$0.00', style: titleTextStyle));
             }
-            return Text(
-              r'$'
-              '${value.toInt()}k',
-              style: titleTextStyle,
+            return FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                r'$'
+                '${value.toInt()}k',
+                style: titleTextStyle,
+              ),
             );
           },
         ),

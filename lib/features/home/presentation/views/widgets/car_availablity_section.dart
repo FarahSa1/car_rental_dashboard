@@ -11,24 +11,22 @@ class CarAvailablitySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
-      verticalPadding: 32,
-      horizontaladding: 28,
+      bottomPadding: 40, topPadding: 32,
+      leftPadding: 28, rightPadding: 28,
       child: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CommandHeaderTitle(title: 'Car Availability'),
           SizedBox(height: 16),
           FittedBox(
-            fit: BoxFit.fitWidth,
+            fit: BoxFit.scaleDown,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CarSelection(),
                 SizedBox(width: 24),
                 DateAndTimeSelection(),
                 SizedBox(width: 32),
                 CheckButton(),
-                
               ],
             ),
           ),

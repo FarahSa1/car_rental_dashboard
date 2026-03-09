@@ -10,10 +10,10 @@ class LiveCarStatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
-      verticalPadding: 32,
-      horizontaladding: 28,
+      bottomPadding: 32, topPadding: 32,
+      leftPadding: 28, rightPadding: 28,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           LiveCarStatusHeader(),
           SizedBox(height: 12),

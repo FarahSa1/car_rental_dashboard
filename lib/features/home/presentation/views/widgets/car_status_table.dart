@@ -58,7 +58,7 @@ class CarStatusTable extends StatelessWidget {
         horizontalMargin: 0,
         dataRowMinHeight: 65,
         dataRowMaxHeight: 65,
-        headingRowHeight: 42,
+        headingRowHeight: 30,
         columns: buildTableHeader(context),
         rows: buildTableBody(),
       ),
