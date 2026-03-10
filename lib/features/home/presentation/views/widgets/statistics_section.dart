@@ -5,6 +5,7 @@ import 'package:car_rental_dashboard/features/home/data/models/incom_and_expense
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/hire_and_cancel_section.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/incom_and_expenses_section.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/search_box.dart';
+import 'package:car_rental_dashboard/features/home/presentation/views/widgets/statistics_section_header.dart';
 import 'package:flutter/material.dart';
 
 class StatisticsSection extends StatefulWidget {
@@ -44,21 +45,10 @@ class _StatisticsSectionState extends State<StatisticsSection> {
         children: [
           if (isTablet) const SearchBox(),
           if (isTablet) const SizedBox(height: 32),
-          Text(
-            'Todays Statistics',
-            style: AppStyles.styleMedium20(
-              context,
-            ).copyWith(color: AppColors.gray02Dark),
-          ),
-          Text(
-            'Tue, 14 Nov, 2022, 11.30 AM ',
-            style: AppStyles.styleRegular14(
-              context,
-            ).copyWith(color: AppColors.gray03),
-          ),
+          const StatisticsSectionHeader(),
           const SizedBox(height: 16),
           IncomAndExpensesSection(
-            sectionTitle: 'Incom',
+            sectionTitle: 'Income',
             incomAndExpensesInfoModel: items[0]
           ),
           const SizedBox(height: 16),
