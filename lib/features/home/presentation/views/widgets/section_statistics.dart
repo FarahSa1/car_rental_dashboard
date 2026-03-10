@@ -1,9 +1,7 @@
-import 'package:car_rental_dashboard/core/utils/app_colors.dart';
 import 'package:car_rental_dashboard/core/utils/app_styles.dart';
 import 'package:car_rental_dashboard/features/home/data/models/incom_and_expenses_info_model.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/statistics_percentage.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SectionStatistics extends StatelessWidget {
   const SectionStatistics({

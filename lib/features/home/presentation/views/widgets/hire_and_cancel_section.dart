@@ -1,4 +1,5 @@
 import 'package:car_rental_dashboard/core/utils/app_colors.dart';
+import 'package:car_rental_dashboard/core/utils/size_config.dart';
 import 'package:car_rental_dashboard/features/home/data/models/pie_chart_item_model.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/chart_details.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/custom_background_container.dart';
@@ -37,15 +38,19 @@ class _HireAndCancelSectionState extends State<HireAndCancelSection> {
   ];
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
+  
     return CustomBackgroundContainer(
       child: Column(
         children: [
           StatisticsHeader(title: 'Hire vs Cancel'),
           const SizedBox(height: 30),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 47.0,),
+            padding: const EdgeInsets.symmetric(horizontal: 47.0),
             child: AspectRatio(
-              aspectRatio: 1,
+              aspectRatio:  width < SizeConfig.desktop 
+                              ? 9 / 5  //for mobile and tablet
+                              : 1 , //for desktop
               child: PieChart(buildPieChartData(chartItems: chartItems)),
             ),
           ),

@@ -1,5 +1,3 @@
-import 'package:car_rental_dashboard/core/utils/app_colors.dart';
-import 'package:car_rental_dashboard/core/utils/app_styles.dart';
 import 'package:car_rental_dashboard/features/home/data/models/incom_and_expenses_info_model.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/comparing_widget.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/custom_background_container.dart';
