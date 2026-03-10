@@ -3,6 +3,7 @@ import 'package:car_rental_dashboard/core/widgets/adaptive_layout.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/cusotm_drawer_section.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/home_view_desktop_layout.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/home_view_mobile_layout.dart';
+import 'package:car_rental_dashboard/features/home/presentation/views/widgets/home_view_tablet_layout.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/notification_section.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/search_icon.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class _DashboardHomeViewState extends State<DashboardHomeView> {
                 : null,
         body: AdaptiveLayout(
           mobileLayout: (context) => const HomeViewMobileLayout(),
-          tabletLayout: (context) => const SizedBox(),
+          tabletLayout: (context) => const HomeViewTabletLayout(),
           desktopLayout: (context) => const HomeViewDesktopLayout(),
         ),
       ),

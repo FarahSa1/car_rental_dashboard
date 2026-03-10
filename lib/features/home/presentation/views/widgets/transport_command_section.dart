@@ -12,11 +12,11 @@ class TransportCommandSection extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
     return Container(
-      color: width < SizeConfig.tablet ? null : Colors.white, 
+      color: width < SizeConfig.desktop ? null : Colors.white, 
       padding: EdgeInsets.only(
         left: 28, 
         right: 28,
-        top: width < SizeConfig.tablet ? 0 : 32, 
+        top: width < SizeConfig.desktop ? 0 : 32, 
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

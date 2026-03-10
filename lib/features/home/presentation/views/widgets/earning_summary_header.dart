@@ -8,7 +8,7 @@ class EarningSummaryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery.sizeOf(context).width < SizeConfig.tablet
+    return MediaQuery.sizeOf(context).width < SizeConfig.desktop
         ? Column(
           children: [
             LeftSide(), 

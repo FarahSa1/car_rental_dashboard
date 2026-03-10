@@ -31,17 +31,23 @@ class IncomAndExpensesSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                'Last week $sectionTitle',
-                style: AppStyles.styleMedium14(
-                  context,
-                ).copyWith(color: AppColors.gray02Dark),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'Last week $sectionTitle',
+                  style: AppStyles.styleMedium14(
+                    context,
+                  ).copyWith(color: AppColors.gray02Dark),
+                ),
               ),
-              Text(
-                r'$' '${incomAndExpensesInfoModel.lastWeekAmount.toStringAsFixed(2)}',
-                style: AppStyles.styleMedium14(
-                  context,
-                ).copyWith(color: AppColors.gray02Dark),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  r'$' '${incomAndExpensesInfoModel.lastWeekAmount.toStringAsFixed(2)}',
+                  style: AppStyles.styleMedium14(
+                    context,
+                  ).copyWith(color: AppColors.gray02Dark),
+                ),
               ),
             ],
           ),

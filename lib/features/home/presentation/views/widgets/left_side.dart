@@ -18,7 +18,7 @@ class LeftSide extends StatelessWidget {
             context,
           ).copyWith(color: AppColors.black),
         ),
-        MediaQuery.sizeOf(context).width < SizeConfig.tablet 
+        MediaQuery.sizeOf(context).width < SizeConfig.desktop 
           ? const Spacer() 
           : const SizedBox(width: 32),
         DateDropdown(),

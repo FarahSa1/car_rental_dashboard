@@ -18,11 +18,14 @@ class SectionStatistics extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        Text(
-          r'$ ' '${incomAndExpensesInfoModel.amount.toStringAsFixed(2)}',
-          style: AppStyles.styleBold28(
-            context,
-          ).copyWith(color: Color(0xff01150C)),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            r'$ ' '${incomAndExpensesInfoModel.amount.toStringAsFixed(2)}',
+            style: AppStyles.styleBold28(
+              context,
+            ).copyWith(color: Color(0xff01150C)),
+          ),
         ),
         Row(
           children: [
@@ -32,11 +35,14 @@ class SectionStatistics extends StatelessWidget {
               color: incomAndExpensesInfoModel.isDown ? AppColors.secondaryRed : AppColors.green,
             ),
             const SizedBox(width: 4),
-            Text(
-              '${incomAndExpensesInfoModel.percentage}%',
-              style: AppStyles.styleMedium16(
-                context,
-              ).copyWith(color:incomAndExpensesInfoModel.isDown ? AppColors.secondaryRed : AppColors.green,),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                '${incomAndExpensesInfoModel.percentage}%',
+                style: AppStyles.styleMedium16(
+                  context,
+                ).copyWith(color:incomAndExpensesInfoModel.isDown ? AppColors.secondaryRed : AppColors.green,),
+              ),
             ),
           ],
         ),
