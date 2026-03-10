@@ -9,7 +9,7 @@ class CustomDrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment:  MainAxisAlignment.center,
       children: [
         Flexible(child: SvgPicture.asset(Assets.imagesLogo)),
         const SizedBox(width: 4),

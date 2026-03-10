@@ -28,17 +28,17 @@ class _DashboardHomeViewState extends State<DashboardHomeView> {
             MediaQuery.sizeOf(context).width < SizeConfig.tablet
                 ? AppBar(
                   elevation: 0,
-                  backgroundColor: Color(0xffffffff),
+                  backgroundColor: const Color(0xffffffff),
                   leading: GestureDetector(
                     onTap: () => scaffoldKey.currentState!.openDrawer(),
-                    child: Icon(Icons.menu),
+                    child: const Icon(Icons.menu),
                   ),
-                  actions: [
+                  actions: const [
                     NotificationSection(),
-                    const SizedBox(width: 20),
+                    SizedBox(width: 20),
                     SearchIcon(),
                   ],
-                  actionsPadding: EdgeInsets.only(right: 28),
+                  actionsPadding:const EdgeInsets.only(right: 28),
                 )
                 : null,
         drawer:

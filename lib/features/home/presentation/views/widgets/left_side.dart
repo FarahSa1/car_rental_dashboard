@@ -20,7 +20,7 @@ class LeftSide extends StatelessWidget {
         MediaQuery.sizeOf(context).width < SizeConfig.desktop 
           ? const Spacer() 
           : const SizedBox(width: 32),
-        DateDropdown(),
+       const DateDropdown(),
       ],
     );
   }

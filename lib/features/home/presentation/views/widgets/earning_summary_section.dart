@@ -12,7 +12,7 @@ class EarningSummarySection extends StatelessWidget {
       leftPadding: 28, rightPadding: 28,
       topPadding: 32, 
       bottomPadding: 32,
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           EarningSummaryHeader(), 

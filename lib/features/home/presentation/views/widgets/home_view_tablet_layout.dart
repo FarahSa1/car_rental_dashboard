@@ -11,7 +11,7 @@ class HomeViewTabletLayout extends StatelessWidget {
       children: [
         Expanded(
           flex: 2,
-          child: CusotmDrawerSection()),
+          child:  CusotmDrawerSection()),
         Expanded(
           flex: 5,
           child: HomeViewMobileLayout())

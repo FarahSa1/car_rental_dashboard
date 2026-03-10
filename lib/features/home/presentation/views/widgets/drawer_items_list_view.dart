@@ -59,7 +59,7 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
             setState(() {});
           },
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(vertical: 8),
             child: DrawerItem(
               drawerItemModel: items[index],
               isActive: currentIndex == index,

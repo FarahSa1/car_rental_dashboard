@@ -12,7 +12,7 @@ class LiveCarStatusSection extends StatelessWidget {
     return CustomBackgroundContainer(
       bottomPadding: 32, topPadding: 32,
       leftPadding: 28, rightPadding: 28,
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           LiveCarStatusHeader(),

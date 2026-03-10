@@ -11,7 +11,7 @@ class CustomLineChart extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 720 / 182,
       child: LineChart(
-        duration: Duration(milliseconds: 150),
+        duration: const Duration(milliseconds: 150),
         curve: Curves.linear,
         LineChartData(
           minX: -1,
@@ -19,7 +19,7 @@ class CustomLineChart extends StatelessWidget {
           minY: 0,
           maxY: 300,
           clipData: FlClipData.all(),
-          borderData: FlBorderData(show: false),
+          borderData:  FlBorderData(show: false),
           titlesData: buildTitlesData(context),
           gridData: buildGridData(),
           lineBarsData: [
@@ -33,11 +33,11 @@ class CustomLineChart extends StatelessWidget {
 
 //Methods
   LineChartBarData buildPrimaryLine() {
-    return LineChartBarData(
+    return  LineChartBarData(
       color: AppColors.primaryBlue,
       barWidth: 1.5,
       isCurved: true,
-      dotData: FlDotData(show: false),
+      dotData: const FlDotData(show: false),
       spots: const [
         FlSpot(-0.5, 250),
         FlSpot(0, 120),
@@ -74,8 +74,8 @@ class CustomLineChart extends StatelessWidget {
       color: AppColors.gray02Light.withValues(alpha: 0.6),
       barWidth: 1.5,
       isCurved: true,
-      dotData: FlDotData(show: false),
-      dashArray: [
+      dotData: const FlDotData(show: false),
+      dashArray: const [
         4,
         3,
       ], //index 1 what to draw, index 2 what not to draw as a space
@@ -119,8 +119,8 @@ class CustomLineChart extends StatelessWidget {
     ).copyWith(color: AppColors.gray02Dark);
     return FlTitlesData(
       show: true,
-      rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-      topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+      rightTitles:const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+      topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
       bottomTitles: AxisTitles(
         sideTitles: SideTitles(
           interval: 1,

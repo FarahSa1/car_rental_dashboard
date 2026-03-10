@@ -14,12 +14,12 @@ class LiveCarStatusHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        CommandHeaderTitle(title: 'Live Car Status',),
+      children:  [
+        const CommandHeaderTitle(title: 'Live Car Status',),
         Row(
           children: [
             SvgPicture.asset(Assets.imagesIconsFilter),
-            SizedBox(width: 12,),
+            const SizedBox(width: 12,),
             Text('Filter', style: AppStyles.styleMedium16(context).copyWith(color: AppColors.gray02Dark),)
           ],
         )

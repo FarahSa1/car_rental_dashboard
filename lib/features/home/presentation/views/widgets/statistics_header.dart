@@ -20,10 +20,10 @@ class StatisticsHeader extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
-            color: Color(0xffF4F5F7),
+            color: const Color(0xffF4F5F7),
             borderRadius: BorderRadius.circular(2),
           ),
-          child: Text(
+          child:  Text(
             'Today',
             style: AppStyles.styleRegular12(
               context,

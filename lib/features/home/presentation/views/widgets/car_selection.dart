@@ -10,7 +10,7 @@ class CarSelection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomSelectionContainer(
+    return const CustomSelectionContainer(
       child: SelectionItem(
         showArrow: true,
         svgIcon: Assets.imagesIconsCar,

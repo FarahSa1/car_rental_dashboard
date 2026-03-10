@@ -16,7 +16,7 @@ class StatisticsPercentage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(
+         Icon(
           incomAndExpensesInfoModel.isDown ? FontAwesomeIcons.arrowDown : FontAwesomeIcons.arrowUp,
           size: 16,
           color: incomAndExpensesInfoModel.isDown ? AppColors.secondaryRed : AppColors.green,

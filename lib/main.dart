@@ -22,7 +22,7 @@ class CarRentalDashboard extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme:  ThemeData(
         brightness: Brightness.light,
         fontFamily: kFontFamily
       ),

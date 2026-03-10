@@ -12,19 +12,19 @@ class CusotmDrawerSection extends StatelessWidget {
     return Container(
       width: 250,
       padding: const EdgeInsets.symmetric(vertical: 48.0, horizontal: 32.0),
-      decoration: BoxDecoration(color: AppColors.black),
-      child: CustomScrollView(
+      decoration: const BoxDecoration(color: AppColors.black),
+      child: const CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(child: CustomDrawerHeader()),
-          const SliverToBoxAdapter(child: SizedBox(height: 44)),
+          SliverToBoxAdapter(child: CustomDrawerHeader()),
+          SliverToBoxAdapter(child: SizedBox(height: 44)),
           DrawerItemsListView(),
           SliverFillRemaining(
             hasScrollBody: false,
-            child: const Column(
+            child: Column(
               children: [
-                SizedBox(height: 146,),
+                SizedBox(height: 146),
                 CustomButton(),
-                 SizedBox(height: 44),
+                SizedBox(height: 44),
               ],
             ),
           ),
@@ -33,4 +33,3 @@ class CusotmDrawerSection extends StatelessWidget {
     );
   }
 }
-

@@ -9,14 +9,14 @@ class EarningSummaryHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery.sizeOf(context).width < SizeConfig.desktop
-        ? Column(
+        ? const Column(
           children: [
             LeftSide(), 
-            SizedBox(height: 6,),
+            const SizedBox(height: 6,),
             RightSide(),
           ],
         )
-        : Row(
+        : const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             LeftSide(), 

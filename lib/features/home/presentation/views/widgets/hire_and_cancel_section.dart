@@ -43,13 +43,13 @@ class _HireAndCancelSectionState extends State<HireAndCancelSection> {
     return CustomBackgroundContainer(
       child: Column(
         children: [
-          StatisticsHeader(title: 'Hire vs Cancel'),
+          const StatisticsHeader(title: 'Hire vs Cancel'),
           const SizedBox(height: 30),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 47.0),
-            child: AspectRatio(
+            child:  AspectRatio(
               aspectRatio:  width < SizeConfig.desktop 
-                              ? 9 / 5  //for mobile and tablet
+                              ? 7 / 5  //for mobile and tablet
                               : 1 , //for desktop
               child: PieChart(buildPieChartData(chartItems: chartItems)),
             ),

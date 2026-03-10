@@ -52,7 +52,7 @@ class CarStatusTable extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
+    return  FittedBox(
       fit: BoxFit.scaleDown,
       child: DataTable(
         horizontalMargin: 0,

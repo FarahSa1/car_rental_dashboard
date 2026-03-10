@@ -55,7 +55,7 @@ class _StatisticsSectionState extends State<StatisticsSection> {
             incomAndExpensesInfoModel: items[1]
           ),
           const SizedBox(height: 16),
-          HireAndCancelSection(),
+          const HireAndCancelSection(),
         ],
       ),
     );

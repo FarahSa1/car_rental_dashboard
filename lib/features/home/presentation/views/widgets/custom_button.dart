@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(Assets.imagesIconsLogout),
-              SizedBox(width: 12),
+              const SizedBox(width: 12),
               Text(
                 'Logout',
                 style: AppStyles.styleMedium18(

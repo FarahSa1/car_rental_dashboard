@@ -15,7 +15,7 @@ class DateDropdown extends StatelessWidget {
             context,
           ).copyWith(color: AppColors.gray02Light),
         ),
-        SizedBox(width: 8),
+        const SizedBox(width: 8),
         Icon(Icons.keyboard_arrow_down_outlined, size: 16, color: AppColors.gray02Light),
       ],
     );

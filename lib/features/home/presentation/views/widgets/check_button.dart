@@ -9,11 +9,11 @@ class CheckButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return  Container(
       padding: EdgeInsets.symmetric(horizontal: 36,vertical: 12),
       decoration: BoxDecoration(
          borderRadius: BorderRadius.circular(4),
-         color: AppColors.primaryBlue
+         color:  AppColors.primaryBlue
       ),
       child: Text('Check', style: AppStyles.styleRegular16(context).copyWith(color: Colors.white),),
     );

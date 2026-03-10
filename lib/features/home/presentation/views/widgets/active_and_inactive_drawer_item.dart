@@ -17,7 +17,7 @@ class ActiveDrawerItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(4),
             color: AppColors.primaryBlue,
           ),
-          child: ListTile(
+          child:  ListTile(
             leading: SvgPicture.asset(drawerItemModel.icon),
             title: FittedBox(
               fit: BoxFit.scaleDown,

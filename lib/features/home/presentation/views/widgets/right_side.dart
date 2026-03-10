@@ -9,12 +9,12 @@ class RightSide extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        OptionIndicator(text: 'Last 6 months', color: AppColors.primaryBlue),
+        const OptionIndicator(text: 'Last 6 months', color: AppColors.primaryBlue),
         // MediaQuery.sizeOf(context).width < SizeConfig.tablet
         //     ? const Spacer()
         //     : const SizedBox(width: 32),
         const SizedBox(width: 32,),
-        OptionIndicator(
+        const OptionIndicator(
           text: 'Same period last year',
           color: AppColors.gray02Light,
         ),
