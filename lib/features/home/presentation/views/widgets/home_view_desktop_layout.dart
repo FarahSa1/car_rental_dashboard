@@ -20,7 +20,7 @@ class HomeViewDesktopLayout extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(flex: 3, child: StatisticsSection()),
-                    Expanded(flex: 7, child: TransportCommandSection()),
+                    Expanded(flex: 7, child: TransportCommandSection(showSearchSection: true,)),
                   ],
                 ),
               ),

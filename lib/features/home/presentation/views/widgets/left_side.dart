@@ -1,5 +1,6 @@
 import 'package:car_rental_dashboard/core/utils/app_colors.dart';
 import 'package:car_rental_dashboard/core/utils/app_styles.dart';
+import 'package:car_rental_dashboard/core/utils/size_config.dart';
 import 'package:car_rental_dashboard/features/home/presentation/views/widgets/date_dropdown.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class LeftSide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+
       children: [
         Text(
           'Earning Summary',
@@ -16,7 +18,9 @@ class LeftSide extends StatelessWidget {
             context,
           ).copyWith(color: AppColors.black),
         ),
-        const SizedBox(width: 32),
+        MediaQuery.sizeOf(context).width < SizeConfig.tablet 
+          ? const Spacer() 
+          : const SizedBox(width: 32),
         DateDropdown(),
       ],
     );
